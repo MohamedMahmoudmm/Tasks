@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:untitled/BirthDayCard.dart';
+import 'package:untitled/businessCard.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 
       //home:FirstTask() ,
-      home: Birthday(),
+      //home: Birthday(),
+      home: BusinessCard(),
     );
   }
 }
@@ -28,12 +30,12 @@ class FirstTask extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.indigo,
+        backgroundColor: Colors.orange,
         title: Text('First Application'),
       ),
       body: Center(
-          child: Text(' Mohamed Mahmoud Eid',
-            style: TextStyle(fontSize: 25,),
+          child: Text('Mohamed mahmoud eid',
+            style: TextStyle(fontFamily: 'Pacifico',fontSize: 20,fontWeight: FontWeight.bold),
           )
       ),
     );
