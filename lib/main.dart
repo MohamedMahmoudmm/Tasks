@@ -1,8 +1,12 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:untitled/BirthDayCard.dart';
+import 'package:untitled/basketCounter.dart';
 import 'package:untitled/businessCard.dart';
 
-void main() {
+void main()async {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
@@ -18,7 +22,9 @@ class MyApp extends StatelessWidget {
 
       //home:FirstTask() ,
       //home: Birthday(),
-      home: BusinessCard(),
+      //home: BusinessCard(),
+      home: BasketCounter(),
+
     );
   }
 }
